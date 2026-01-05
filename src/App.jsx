@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
+import Renovations from './pages/Renovations'
 import Contact from './pages/Contact'
 import Legal from './pages/Legal'
 
@@ -18,6 +19,18 @@ function ScrollToTop() {
     })
   }, [pathname])
 
+  // Add keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        // You can add custom escape handling if needed
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
+
   return null
 }
 
@@ -30,6 +43,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/renovations" element={<Renovations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>

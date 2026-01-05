@@ -9,14 +9,14 @@ import {
 const Services = () => {
   // Image URLs - Replace these with your actual image paths
   const serviceImages = [
-    './1.png', // Electrical Installation
-    './2.png', // Commercial
-    './3.png', // Repairs
-    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop', // Maintenance
+    './WhatsApp Image 2026-01-05 at 21.28.58.jpeg', // Electrical Installation
+    './WhatsApp%20Image%202026-01-05%20at%2021.29.08.jpeg?version%3D1767645064775', // Commercial
+    './WhatsApp Image 2026-01-05 at 21.29.03.jpeg', // Repairs
+    './WhatsApp Image 2026-01-05 at 21.29.25.jpeg', // Maintenance
     './5.png', // CCTV
-    './6.png', // Generator
+    './WhatsApp Image 2026-01-05 at 21.29.23.jpeg', // Generator
     './7.png', // Meters
-    './8.png', // Garage Doors
+    './WhatsApp Image 2026-01-05 at 21.29.22.jpeg', // Garage Doors
     './9.png', // Fencing
     './10.png', // Equipment
     './11.png', // Supply
